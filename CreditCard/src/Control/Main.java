@@ -14,6 +14,7 @@ public class Main {
 		CurrentMachine = Machines.get(0);
 		CurrentMachine.AddClient("Jeferson", 0);
 		for(i=0; i<5; i++) {
+			CurrentMachine = Machines.get(i);
 			result = CurrentMachine.InsertCredits("Jeferson", (i+1)*10);
 			System.out.println(result);
 		}
